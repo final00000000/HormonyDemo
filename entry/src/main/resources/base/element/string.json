@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "Login_Activity",
+      "value": "登录页面"
+    },
+    {
+      "name": "Login_Title",
+      "value": "登录"
+    }
+  ]
+}
