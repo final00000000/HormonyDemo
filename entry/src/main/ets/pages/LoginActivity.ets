@@ -73,7 +73,7 @@ struct LoginActivity {
               console.error('测试：Failed to hideSoftKeyboard: ' + JSON.stringify(err));
             }
           })
-          if (this.account == '' || this.account.length > 12) {
+          /*if (this.account == '' || this.account.length > 12) {
             this.account = ''
             promptAction.showToast({ message: "账号最大输入16位，请重新输入" })
             return
@@ -82,15 +82,12 @@ struct LoginActivity {
             this.psw = ''
             promptAction.showToast({ message: "密码最大输入16位，请重新输入" })
             return
-          }
+          }*/
 
           if (this.account != '' && this.account == "admin" && this.psw != '' && this.psw == "admin123") {
-            promptAction.showToast({ message: "登陆成功" })
-            console.info("测试登录：" + this.account.toString() + "  Psw：" + this.psw.toString())
-            router.pushUrl({
-              url: "pages/MainActivity"
-            }).then(() => {
-
+            router.pushUrl({ url: "pages/MainActivity" }).then(() => {
+              console.info("测试登录：" + this.account.toString() + "  Psw：" + this.psw.toString())
+              promptAction.showToast({ message: "登陆成功" })
             })
           } else {
             promptAction.showToast({ message: "账号或密码错误，请重新输入" })
